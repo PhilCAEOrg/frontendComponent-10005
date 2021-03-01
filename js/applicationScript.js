@@ -37,7 +37,7 @@ var init = function() {
   var iwcCallback = function(intent) {
     // define your reactions on incoming iwc events here 
     console.log(intent);
-    if (intent.action == "actionName") {
+    if (intent.action == "actionName2") {
        testFunct(intent.data);
     }
   };

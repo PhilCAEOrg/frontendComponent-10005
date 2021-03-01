@@ -37,11 +37,19 @@ var init = function() {
   var iwcCallback = function(intent) {
     // define your reactions on incoming iwc events here 
     console.log(intent);
-
+    if (intent.action == "actionName") {
+       testFunct(intent.data);
+    }
   };
 
   client = new Las2peerWidgetLibrary("$Microservice_Url$/", iwcCallback, '*');
 
+  $('#button_5102c').on('click', function() {
+    //start parameter initiation
+
+    //end parameter initiation
+    testFunct();
+  })
 
 
 }
@@ -52,15 +60,15 @@ var initClient = function(y) {
 };
 
 // testFunct
-var testFunct = function(){
+var testFunct = function("test"){
 
 //start variable declaration
 
 //end variable declaration
 
 
-  var contentName = "initialized";
-  client.sendIntent("actionName",contentName,true);
+  var "message content" = "initialized";
+  client.sendIntent("actionName","message content",true);
 
   //Additional own javascript
 
